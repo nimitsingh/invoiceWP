@@ -1,0 +1,12 @@
+import  * as $ from 'jquery'
+
+
+export function _getParameterValues(param) {
+    var url = window.location.href.slice(window.location.href.indexOf('v') + 1).split('v');
+    for (var i = 0; i < url.length; i++) {
+        var urlparam = url[i].split('=');
+        if (urlparam[0] == param) {
+            return urlparam[1];
+        }
+    }
+}

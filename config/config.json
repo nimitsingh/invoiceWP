@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "filetoupload-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/filetoupload/FiletouploadWebPart.js",
+          "manifest": "./src/webparts/filetoupload/FiletouploadWebPart.manifest.json"
+        }
+      ]
+    },
+    "dashboard-grid-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dashboardGrid/DashboardGridWebPart.js",
+          "manifest": "./src/webparts/dashboardGrid/DashboardGridWebPart.manifest.json"
+        }
+      ]
+    },
+    "view-detail-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/viewDetailWp/ViewDetailWpWebPart.js",
+          "manifest": "./src/webparts/viewDetailWp/ViewDetailWpWebPart.manifest.json"
+        }
+      ]
+    },
+    "edit-details-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/editDetailsWp/EditDetailsWpWebPart.js",
+          "manifest": "./src/webparts/editDetailsWp/EditDetailsWpWebPart.manifest.json"
+        }
+      ]
+    },
+    "list-attachment-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/listAttachmentWp/ListAttachmentWpWebPart.js",
+          "manifest": "./src/webparts/listAttachmentWp/ListAttachmentWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    },
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "jQuery"
+    }
+  },
+  "localizedResources": {
+    "FiletouploadWebPartStrings": "lib/webparts/filetoupload/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "DashboardGridWebPartStrings": "lib/webparts/dashboardGrid/loc/{locale}.js",
+    "ViewDetailWpWebPartStrings": "lib/webparts/viewDetailWp/loc/{locale}.js",
+    "EditDetailsWpWebPartStrings": "lib/webparts/editDetailsWp/loc/{locale}.js",
+    "ListAttachmentWpWebPartStrings": "lib/webparts/listAttachmentWp/loc/{locale}.js"
+  }
+}
